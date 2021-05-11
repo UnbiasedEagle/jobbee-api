@@ -2,7 +2,6 @@ import path from 'path';
 import express from 'express';
 import dotenv from 'dotenv';
 import db from './config/db.js';
-import morgan from 'morgan';
 import colors from 'colors';
 import cookieParser from 'cookie-parser';
 import { errorHandler } from './middlewares/errors.js';
@@ -42,9 +41,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(cookieParser());
 app.use(express.json());
-if (process.env.NODE_ENV === 'development') {
-  app.use(morgan('dev'));
-}
 app.use(fileupload());
 
 // Api Rate Limit
