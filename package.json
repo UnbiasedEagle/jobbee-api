@@ -9,7 +9,8 @@
     "start": "SET NODE_ENV=production && node server.js"
   },
   "engines": {
-    "node": "15.1.0"
+    "node": "15.1.0",
+    "npm": "7.0.8"
   },
   "author": "Saurabh Singh",
   "license": "MIT",
