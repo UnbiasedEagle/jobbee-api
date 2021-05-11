@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon server.js",
-    "start": "SET NODE_ENV=production && node server.js"
+    "start": "set NODE_ENV=production && node server.js"
   },
   "engines": {
     "node": "15.1.0",
